@@ -1,0 +1,113 @@
+String (str)
+
+✅ Ordered (characters have positions)
+✅ Iterable
+❌ Mutable (cannot change after creation)
+✅ Supports indexing and slicing
+❌ Cannot append or update directly
+✅ Allows duplicate characters
+✅ Accepts only text/characters (letters, digits, symbols)
+
+Example:
+text = "Hello123!"
+
+
+List (list)
+
+✅ Ordered
+✅ Iterable
+✅ Mutable (can change, add, or remove elements)
+✅ Supports indexing and slicing
+✅ Can append, insert, remove, extend, update
+✅ Allows duplicate elements
+✅ Accepts multiple data types (int, float, str, bool, list, tuple, dict)
+
+# Using square brackets
+my_list1 = [1, 2.5, "apple", True]
+
+# Using list() function
+my_list2 = list((1, 2, 3))        # [1, 2, 3]
+
+# Empty list
+my_list3 = []
+my_list4 = list()
+
+# From a string (creates list of characters)
+my_list5 = list("abc")            # ['a', 'b', 'c']
+
+# From a range
+my_list6 = list(range(5))         # [0, 1, 2, 3, 4]
+
+
+Tuple (tuple)
+
+✅ Ordered
+✅ Iterable
+❌ Mutable (cannot modify or add items)
+✅ Supports indexing and slicing
+❌ Cannot append, update, or remove
+✅ Allows duplicate elements
+✅ Accepts multiple data types (int, float, str, bool, list, dict)
+
+Ways to create a tuple:
+
+# Using parentheses
+t1 = (1, 2.5, "apple", False)
+
+# Using tuple() function
+t2 = tuple([1, 2, 3])             # (1, 2, 3)
+
+# Without parentheses (comma-separated values)
+t3 = 1, 2, 3                      # (1, 2, 3)
+
+# Single-element tuple (note the comma!)
+t4 = (5,)                         # (5,)
+
+# Empty tuple
+t5 = ()
+t6 = tuple()
+
+
+Range (range)
+
+✅ Ordered (sequence of numbers)
+✅ Iterable
+❌ Mutable (cannot modify)
+✅ Supports indexing and slicing
+❌ Cannot append or update
+❌ Does not allow mixed data types — only integers
+
+r = range(1, 6)      # Generates 1, 2, 3, 4, 5
+list(r)              # [1, 2, 3, 4, 5]
+# range("a", "z") → ❌ Error (non-integer values not allowed)
+
+
+Dictionary (dict)
+
+✅ Ordered (Python 3.7+)
+✅ Iterable (loops over keys by default)
+✅ Mutable
+✅ Supports indexing by key
+✅ Can add, update, remove items
+❌ Does not allow duplicate keys (latest value overwrites)
+✅ Keys and values can be different data types
+❌ Keys must be immutable types (e.g., string, int, tuple — not list)
+
+# Using curly braces
+d1 = {"name": "Alice", "age": 25, "active": True}
+
+# Using dict() constructor
+d2 = dict(name="Bob", age=30)
+
+# From list of tuples
+d3 = dict([("x", 1), ("y", 2)])   # {'x': 1, 'y': 2}
+
+# From two lists using zip()
+keys = ["a", "b", "c"]
+values = [1, 2, 3]
+d4 = dict(zip(keys, values))      # {'a': 1, 'b': 2, 'c': 3}
+
+# Empty dictionary
+d5 = {}
+d6 = dict()
+
