@@ -1,3 +1,6 @@
+'''This module contains some useful functions and variables'''
+# just like a def functions, this string is a documentation that describes the module
+
 def factorial_3(x):
     '''This function calculates factorial of a number'''
     if x == 0:
@@ -12,3 +15,6 @@ def fibonacci(n):
         next_value = fib_series[-1] + fib_series[-2]
         fib_series.append(next_value)
     return fib_series
+
+# variable
+pi = 3.14
