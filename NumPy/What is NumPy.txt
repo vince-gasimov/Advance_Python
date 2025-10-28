@@ -1,0 +1,38 @@
+NumPy is an open source library available in Python
+it helps in mathematical, scientific, engineering, and data science programming
+It is a very useful library to perform mathematical and statistical operations in Python. 
+It works perfectly for multi-dimensional arrays and matrix multiplication. 
+It is easy to integrate with C/C++ and Fortran.
+
+Why Use NumPy?
+
+In Python we have lists that serve the purpose of arrays, but they are slow to process.
+NumPy aims to provide an array object that is up to 50x faster than traditional Python lists.
+The array object in NumPy is called ndarray , it provides a lot of supporting functions that make working with ndarray very easy.
+Arrays are very frequently used in data science, where speed and resources are very important.
+
+Why is NumPy Faster Than Lists?
+NumPy arrays are stored at one continuous place in memory unlike lists,
+
+Scalar - Vector - Matrix - Tensor
+
+Scalar
+    - 0D array
+    simple lement with single value
+
+Vector
+    - 1D array
+    - an ordered list of elements
+
+Matric
+    - 2D array
+    - a table or grid of ordered elements
+    - it has 2 axes: rows and columns
+
+Tensor
+    - 3D array
+    - srtucture in which elements are arranged in layers
+    - it has 3 axes: width, hight, and depth
+
+Syntex:
+arr = np.array([1,2,3], [4,5,6])
