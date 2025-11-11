@@ -1,0 +1,7 @@
+This is my first line in the file.
+This is my second line in the file.
+Hello World!
+Hello World!
+Hello World!
+Lets try new technique
+Add this text
